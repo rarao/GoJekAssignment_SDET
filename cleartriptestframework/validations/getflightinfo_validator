@@ -1,0 +1,8 @@
+def ValidateGetFlightInfoResponse(responseHash)
+	expect(responseHash.keys).to contain_exactly("BI","MR")
+
+	expect(responseHash["BI"].empty?).to eq false
+	expect(responseHash["MR"].empty?).to eq false
+	
+
+end
